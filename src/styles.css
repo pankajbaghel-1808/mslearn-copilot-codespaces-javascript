@@ -123,3 +123,16 @@ img.socialIcon {
   height: 30px;
   width: 30px;
 }
+
+@keyframes icon-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+img.socialIcon {
+  animation: icon-bounce 1s infinite;
+}
